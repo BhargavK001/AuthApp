@@ -1,0 +1,32 @@
+# EAS Build Ignore File
+# This is different from .gitignore - we need to include some files that are gitignored
+
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native builds
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+
+# NOTE: config/firebase.js is NOT ignored here so it gets uploaded to EAS
+# It will be created by GitHub Actions before the build
